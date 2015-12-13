@@ -1,0 +1,22 @@
+<p class="red"> This is page3  <parallel [model]="test"></parallel>
+
+</p>
+<div>
+    <table>
+        <th>
+            <tr>
+                <td>Location</td>
+                <td>Magnitude</td>
+                <td>date/time</td>
+                <td>title</td>
+            </tr>
+        </th>
+        <tr *ng-for="#item of data">
+            <td class="eqInfo-location">{{item.location}}</td>
+            <td class="eqInfo-magnitude">{{item.magnitude}}</td>
+            <td class="eqInfo-dateTime">{{item.dateTime | date:'MMddyy h:mm:ss'}}</td>
+            <td class="eqInfo-title">{{item.title}}</td>
+        </tr>
+    </table>
+
+</div>
